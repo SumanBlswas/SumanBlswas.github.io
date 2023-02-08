@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.ba17183d.css",
-    "main.js": "/static/js/main.3de59590.js",
+    "main.js": "/static/js/main.3cb41289.js",
     "static/js/27.80ec1f0b.chunk.js": "/static/js/27.80ec1f0b.chunk.js",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.ba17183d.css",
-    "static/js/main.3de59590.js"
+    "static/js/main.3cb41289.js"
   ]
 }
