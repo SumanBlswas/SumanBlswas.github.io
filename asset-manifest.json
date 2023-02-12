@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.792b3898.css",
-    "main.js": "/static/js/main.dad95ff6.js",
-    "static/js/27.80ec1f0b.chunk.js": "/static/js/27.80ec1f0b.chunk.js",
+    "main.css": "/static/css/main.f90d038e.css",
+    "main.js": "/static/js/main.fcd51244.js",
+    "static/js/27.2163fce8.chunk.js": "/static/js/27.2163fce8.chunk.js",
+    "static/media/TravelHut.png": "/static/media/TravelHut.449510875d2828225d89.png",
+    "static/media/EliteStore.png": "/static/media/EliteStore.a123ebf033df906e878e.png",
+    "static/media/PyaraPiizza.png": "/static/media/PyaraPiizza.7009639655b8ee0ba561.png",
+    "static/media/DummyPic.png": "/static/media/DummyPic.96fe79664ed9e871bb6f.png",
+    "static/media/DummyPic2.png": "/static/media/DummyPic2.e6bca7b8658380148918.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.792b3898.css",
-    "static/js/main.dad95ff6.js"
+    "static/css/main.f90d038e.css",
+    "static/js/main.fcd51244.js"
   ]
 }
