@@ -37,7 +37,14 @@ const Contact = () => {
     window.open("https://github.com/SumanBlswas");
   };
   return (
-    <Container bg={bgColor} maxW="full" mt={0} centerContent overflow="hidden">
+    <Container
+      id="contact"
+      bg={bgColor}
+      maxW="full"
+      mt={0}
+      centerContent
+      overflow="hidden"
+    >
       <Flex gap={4} justify={"center"} align={"center"}>
         <Heading
           as={"h1"}
