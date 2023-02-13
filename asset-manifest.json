@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ebe72e34.css",
-    "main.js": "/static/js/main.2af6dffc.js",
+    "main.js": "/static/js/main.7895c2d2.js",
     "static/js/27.2163fce8.chunk.js": "/static/js/27.2163fce8.chunk.js",
     "static/media/TravelHut.png": "/static/media/TravelHut.449510875d2828225d89.png",
     "static/media/EliteStore.png": "/static/media/EliteStore.a123ebf033df906e878e.png",
@@ -13,6 +13,6 @@
   },
   "entrypoints": [
     "static/css/main.ebe72e34.css",
-    "static/js/main.2af6dffc.js"
+    "static/js/main.7895c2d2.js"
   ]
 }
