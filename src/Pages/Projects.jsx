@@ -8,7 +8,11 @@ const Projects = () => {
     <Box id="projects" mt={"5%"} zIndex={"-1"}>
       <Heading>Projects</Heading>
       <Center>
-        <Flex justify={"space-between"} gap={4}>
+        <Flex
+          justify={{ base: "center", md: "space-between" }}
+          alignItems="center"
+          flexWrap="wrap"
+        >
           <TravelHut />
           <PyaraPizza />
           <EliteStore />

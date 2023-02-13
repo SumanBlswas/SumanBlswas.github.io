@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import GitStat from "../Components/GitStat/GitStat";
 // import About from "../Pages/About";
 // import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
@@ -10,6 +11,7 @@ const AllRoutes = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/git-stat" element={<GitStat />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />

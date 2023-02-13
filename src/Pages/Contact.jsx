@@ -78,7 +78,7 @@ const Contact = () => {
                       pl={0}
                       spacing={3}
                       alignItems="flex-start"
-                      textAlign={"left"}
+                      textAlign={"center"}
                     >
                       <Button
                         id="contact-phone"

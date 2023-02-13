@@ -27,7 +27,7 @@ const TravelHut = () => {
   const color2 = useColorModeValue("#fff", "#461783");
   const color2S = useColorModeValue("#000", "#fff");
   return (
-    <Center py={12} class="project-card">
+    <Center py={12} className="project-card">
       <Box
         role={"group"}
         p={6}
@@ -72,7 +72,7 @@ const TravelHut = () => {
         </Box>
         <Stack pt={10} align={"center"} fontFamily={"cursive"}>
           <Heading
-            class="project-title"
+            className="project-title"
             fontSize={"2xl"}
             fontFamily={"body"}
             fontWeight={500}
@@ -80,7 +80,7 @@ const TravelHut = () => {
             Travel-O-City (Clone)
           </Heading>
           <Text
-            class="project-description"
+            className="project-description"
             color={"gray.500"}
             fontSize={"sm"}
             textTransform={"uppercase"}
@@ -88,7 +88,7 @@ const TravelHut = () => {
             Booking Services
           </Text>
           <Flex
-            class="project-tech-stack"
+            className="project-tech-stack"
             justify={"space-between"}
             gap={"5px"}
             align={"center"}
@@ -105,14 +105,14 @@ const TravelHut = () => {
           </Flex>
           <Stack direction={"row"} align={"center"}>
             <Button
-              class="project-github-link"
+              className="project-github-link"
               onClick={handleGithubTravel}
               colorScheme={"green"}
             >
               <ImGithub />
             </Button>
             <Button
-              class="project-deployed-link"
+              className="project-deployed-link"
               onClick={handleTravel}
               colorScheme={"red"}
             >

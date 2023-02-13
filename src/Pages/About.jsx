@@ -83,6 +83,7 @@ const About = () => {
             <Text
               fontFamily={"'Signika Negative', sans-serif"}
               textAlign={"left"}
+              id="user-detail-intro"
             >
               With a strong foundation in software development & a commitment to{" "}
               <br /> delivering high-quality solutions, there is a desire to

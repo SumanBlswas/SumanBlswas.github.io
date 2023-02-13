@@ -74,3 +74,27 @@
     top: 0;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 1200px) {
+    #skills>div {
+        grid-template-columns: repeat(4, 12rem);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #skills>div {
+        grid-template-columns: repeat(3, 12rem);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #skills>div {
+        grid-template-columns: repeat(2, 12rem);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #skills>div {
+        grid-template-columns: repeat(1, 12rem);
+    }
+}
