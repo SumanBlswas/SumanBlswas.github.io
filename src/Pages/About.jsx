@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Center,
   Flex,
   Heading,
@@ -9,6 +10,12 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import DummyPic2 from "../Image/DummyPic2.png";
+
+const downloadResume = () => {
+  window.open(
+    "https://export-download.canva.com/v2sNY/DAFY-jv2sNY/67/0-46868316631.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230212T163324Z&X-Amz-Expires=22179&X-Amz-Signature=f07e6a9de9ac7b1fa0f7781cb32a1e48c32a76a87ac855a8d2593782032b106d&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27sumanmanner%2540gmail.com.pdf&response-expires=Sun%2C%2012%20Feb%202023%2022%3A43%3A03%20GMT"
+  );
+};
 
 const About = () => {
   return (
@@ -100,6 +107,9 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
+      <Button display={"none"} onClick={downloadResume} id="resume-button-2">
+        Resume
+      </Button>
     </Box>
   );
 };

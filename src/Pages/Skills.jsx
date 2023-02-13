@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import "../Components/css/Skills.css";
 
 const Skills = () => {
@@ -7,11 +7,8 @@ const Skills = () => {
       <Heading className="skills-card" fontFamily={"'Sono', sans-serif"}>
         Skills
       </Heading>
-      <Center
-        mt={8}
-        fontFamily={"'Fredoka One', cursive"}
-        className="skills-card-img"
-      >
+      <Image className="skills-card-img" />
+      <Center mt={8} fontFamily={"'Fredoka One', cursive"}>
         {/* <Flex justify={"space-evenly"} wrap={"wrap"}> */}
         <Box>
           <Text className="skills-card-name">HTML5</Text>

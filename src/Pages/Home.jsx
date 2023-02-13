@@ -49,7 +49,6 @@ const Home = () => {
               <br />
               <Flex gap={4} wrap={"wrap"}>
                 <Button
-                  id="resume-button-2"
                   bg={"#C471FF"}
                   color={"#fff"}
                   _hover={{ bg: "#FF9A9E", color: "#000" }}
