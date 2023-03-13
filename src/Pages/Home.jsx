@@ -21,6 +21,8 @@ import { NavLink } from "react-router-dom";
 import GitStat from "../Components/GitStat/GitStat";
 // import { Link } from "react-router-dom";
 import Resume from "../Image/Suman_Biswas_Portfolio.pdf";
+import { BsFillArrowUpSquareFill } from "react-icons/bs";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
   const bgColor = useColorModeValue("#461783", "rgb(234, 246, 249)");
@@ -106,6 +108,18 @@ const Home = () => {
         <GitStat />
       </Box>
       <Divider />
+      <Box
+        position={"fixed"}
+        bottom={"10%"}
+        right={"2%"}
+        cursor={"pointer"}
+        fontSize={"42px"}
+        as={HashLink}
+        to="#"
+        smooth={true}
+      >
+        <BsFillArrowUpSquareFill />
+      </Box>
       <Footer />
     </Box>
   );
