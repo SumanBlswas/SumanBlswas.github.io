@@ -5,7 +5,7 @@
     gap: 20px;
 }
 
-#skills>div p {
+/* #skills>div p {
     padding: 0.6em 1.8em;
     border: none;
     outline: none;
@@ -73,7 +73,7 @@
     left: 0;
     top: 0;
     border-radius: 10px;
-}
+} */
 
 @media only screen and (max-width: 1200px) {
     #skills>div {

@@ -12,17 +12,18 @@ import { FiDownload } from "react-icons/fi";
 import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
+import Resume from "../Image/Suman_Biswas_Portfolio.pdf";
 
 const Navbar = () => {
   const { toggleColorMode } = useColorMode();
   // const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
   // const secondaryTextColor = useColorModeValue("gray.600", "gray.400");
-  const downloadResume = () => {
-    window.open(
-      "https://export-download.canva.com/v2sNY/DAFY-jv2sNY/67/0-46868316631.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230212T163324Z&X-Amz-Expires=22179&X-Amz-Signature=f07e6a9de9ac7b1fa0f7781cb32a1e48c32a76a87ac855a8d2593782032b106d&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27sumanmanner%2540gmail.com.pdf&response-expires=Sun%2C%2012%20Feb%202023%2022%3A43%3A03%20GMT"
-      // "https://export-download.canva.com/fFXkM/DAFaaJfFXkM/3/0-46876027084.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230212T014521Z&X-Amz-Expires=90260&X-Amz-Signature=5ce3ce8644d2d3caefb9ca20737ce07f8b644132e732217fc15c6f63abf04014&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Copy%2520of%2520sumanmanner%2540gmail.com.pdf&response-expires=Mon%2C%2013%20Feb%202023%2002%3A49%3A41%20GMT"
-    );
-  };
+  // const downloadResume = () => {
+  //   window.open(
+  //     // "https://export-download.canva.com/v2sNY/DAFY-jv2sNY/67/0-46868316631.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230212T163324Z&X-Amz-Expires=22179&X-Amz-Signature=f07e6a9de9ac7b1fa0f7781cb32a1e48c32a76a87ac855a8d2593782032b106d&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27sumanmanner%2540gmail.com.pdf&response-expires=Sun%2C%2012%20Feb%202023%2022%3A43%3A03%20GMT"
+  //     "https://export-download.canva.com/fFXkM/DAFaaJfFXkM/3/0-46876027084.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230212T014521Z&X-Amz-Expires=90260&X-Amz-Signature=5ce3ce8644d2d3caefb9ca20737ce07f8b644132e732217fc15c6f63abf04014&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Copy%2520of%2520sumanmanner%2540gmail.com.pdf&response-expires=Mon%2C%2013%20Feb%202023%2002%3A49%3A41%20GMT"
+  //   );
+  // };
 
   const displayNavLinks = useBreakpointValue({
     base: "none",
@@ -142,20 +143,22 @@ const Navbar = () => {
             Neon Mode
           </Flex>
         </Button>
-        <Button
-          className="nav-link resume"
-          id="resume-button-1"
-          bg={"#C471FF"}
-          color={"#fff"}
-          _hover={{ bg: "#FF9A9E", color: "#000" }}
-          onClick={downloadResume}
-          display={displayNavLinks2}
-        >
-          <Flex justify={"space-between"} gap={2} align={"center"}>
-            <FiDownload />
-            Resume
-          </Flex>
-        </Button>
+        <a href={Resume} download>
+          <Button
+            className="nav-link resume"
+            id="resume-button-1"
+            bg={"#C471FF"}
+            color={"#fff"}
+            _hover={{ bg: "#FF9A9E", color: "#000" }}
+            // onClick={downloadResume}
+            display={displayNavLinks2}
+          >
+            <Flex justify={"space-between"} gap={2} align={"center"}>
+              <FiDownload />
+              Resume
+            </Flex>
+          </Button>
+        </a>
       </Flex>
     </Box>
   );

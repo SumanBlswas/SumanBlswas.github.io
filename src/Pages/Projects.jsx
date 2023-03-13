@@ -7,7 +7,7 @@ import TravelHut from "./Projects/TravelHut";
 const Projects = () => {
   return (
     <Box id="projects" mt={"5%"} zIndex={"-1"}>
-      <Heading>Projects</Heading>
+      <Heading fontFamily={"'Sono', sans-serif"}>Projects</Heading>
       <Center>
         <Flex
           justify={{ base: "center", md: "space-between" }}
