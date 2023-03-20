@@ -9,9 +9,9 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import DummyMe from "../Image/DummyMe.png";
-// import pdf from "../Image/Suman_Biswas_Portfolio.pdf";
+import pdf from "../Image/Suman_Biswas_Portfolio.pdf";
 
 const downloadResume = () => {
   window.open(
@@ -109,7 +109,7 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-      <Button onClick={downloadResume} id="resume-button-2">
+      <Button as={Link} to={pdf} download id="resume-button-2">
         Resume
       </Button>
     </Box>
