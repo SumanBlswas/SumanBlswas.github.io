@@ -117,6 +117,7 @@ const Home = () => {
         as={HashLink}
         to="#"
         smooth={true}
+        zIndex={1}
       >
         <BsFillArrowUpSquareFill />
       </Box>
