@@ -109,7 +109,7 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-      <Button display={"none"} onClick={downloadResume} id="resume-button-2">
+      <Button onClick={downloadResume} id="resume-button-2">
         Resume
       </Button>
     </Box>
