@@ -109,7 +109,7 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-      <Button id="resume-link-2" as={"a"} href={pdf} download>
+      <Button id="resume-button-2" as={"a"} href={pdf} download>
         Resume
       </Button>
     </Box>
