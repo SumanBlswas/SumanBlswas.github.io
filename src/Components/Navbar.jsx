@@ -18,12 +18,12 @@ const Navbar = () => {
   const { toggleColorMode } = useColorMode();
   // const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
   // const secondaryTextColor = useColorModeValue("gray.600", "gray.400");
-  // const downloadResume = () => {
-  //   const link = document.createElement("a");
-  //   link.href = Resume;
-  //   link.download = "Suman_Biswas_Portfolio.pdf";
-  //   link.click();
-  // };
+  const downloadResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   const displayNavLinks = useBreakpointValue({
     base: "none",
@@ -151,7 +151,7 @@ const Navbar = () => {
           bg={"#C471FF"}
           color={"#fff"}
           _hover={{ bg: "#FF9A9E", color: "#000" }}
-          // onClick={downloadResume}
+          onClick={downloadResume}
           as={"a"}
           href={Resume}
           download
