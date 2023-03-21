@@ -13,11 +13,11 @@ import {
 import DummyMe from "../Image/DummyMe.png";
 import pdf from "../Image/Suman_Biswas_Portfolio.pdf";
 
-// const downloadResume = () => {
-//   window.open(
-//     "https://export-download.canva.com/fFXkM/DAFaaJfFXkM/5/0-43632598871.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230320%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230320T085609Z&X-Amz-Expires=26031&X-Amz-Signature=4e6774d47c8f68440b2202d4f3522411a54deb824849d327b1e7b479fd06b471&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Copy%2520of%2520sumanmanner%2540gmail.com.pdf&response-expires=Mon%2C%2020%20Mar%202023%2016%3A10%3A00%20GMT"
-//   );
-// };
+const downloadResume = () => {
+  window.open(
+    "https://export-download.canva.com/fFXkM/DAFaaJfFXkM/5/0-43632598871.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230320%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230320T085609Z&X-Amz-Expires=26031&X-Amz-Signature=4e6774d47c8f68440b2202d4f3522411a54deb824849d327b1e7b479fd06b471&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Copy%2520of%2520sumanmanner%2540gmail.com.pdf&response-expires=Mon%2C%2020%20Mar%202023%2016%3A10%3A00%20GMT"
+  );
+};
 
 const About = () => {
   return (
@@ -109,8 +109,16 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-      <Button id="resume-button-2" as={"a"} href={pdf} download>
-        Resume
+      <Button onClick={downloadResume} id="resume-button-2">
+        <a
+          id={"resume-link-2"}
+          href={pdf}
+          target="_blank"
+          rel={"noreferrer"}
+          download={"Suman_Biswas_Resume.pdf"}
+        >
+          Resume
+        </a>
       </Button>
     </Box>
   );
