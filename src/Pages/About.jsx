@@ -129,6 +129,7 @@ const About = () => {
         color={"#fff"}
         _hover={{ bg: "#FF9A9E", color: "#000" }}
         // onClick={downloadResume}
+        display={"none"}
         as={"a"}
         href={Resume}
         download
