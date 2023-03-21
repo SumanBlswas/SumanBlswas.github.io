@@ -9,17 +9,17 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import { FiDownload } from "react-icons/fi";
+// import { FiDownload } from "react-icons/fi";
 // import { Link } from "react-router-dom";
 import DummyMe from "../Image/DummyMe.png";
 import Resume from "../Image/Suman_Biswas_Resume.pdf";
 
-// const downloadResume = () => {
-//   window.open(
-//     "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
-//     "_blank"
-//   );
-// };
+const downloadResume = () => {
+  window.open(
+    "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
+    "_blank"
+  );
+};
 
 const About = () => {
   return (
@@ -111,33 +111,17 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-      {/* <Button onClick={downloadResume} id="resume-button-2">
+      <Button id="resume-button-2">
         <a
           id="resume-link-2"
-          href={PDF}
+          href={Resume}
           target="_blank"
           rel={"noreferrer"}
           download="Suman_Biswas_Resume.pdf"
+          onClick={downloadResume}
         >
           Resume
         </a>
-      </Button> */}
-      <Button
-        id="resume-button-2"
-        pt={2}
-        bg={"#C471FF"}
-        color={"#fff"}
-        _hover={{ bg: "#FF9A9E", color: "#000" }}
-        // onClick={downloadResume}
-        display={"none"}
-        as={"a"}
-        href={Resume}
-        download
-      >
-        <Flex justify={"space-between"} gap={2} align={"center"}>
-          <FiDownload />
-          Resume
-        </Flex>
       </Button>
     </Box>
   );
