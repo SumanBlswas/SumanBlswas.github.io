@@ -15,10 +15,7 @@ import DummyMe from "../Image/DummyMe.png";
 import Resume from "../Image/Suman_Biswas_Resume.pdf";
 
 const downloadResume = () => {
-  window.open(
-    "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
-    "_blank"
-  );
+  window.open(Resume, "_blank");
 };
 
 const About = () => {
