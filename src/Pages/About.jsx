@@ -111,17 +111,6 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-
-      <Button
-        id="resume-button-2"
-        as="a"
-        href={Resume}
-        target="_blank"
-        download="Suman_Biswas_Resume.pdf"
-        onClick={downloadResume}
-      >
-        Resume
-      </Button>
       {/* <Button id="resume-button-2">
         <a
           id="resume-link-2"
@@ -134,6 +123,17 @@ const About = () => {
           Resume
         </a>
       </Button> */}
+      <Button
+        id="resume-button-2"
+        as="a"
+        href={Resume}
+        target="_blank"
+        rel="noreferrer"
+        download="Suman_Biswas_Resume.pdf"
+        onClick={downloadResume}
+      >
+        Resume
+      </Button>
     </Box>
   );
 };
