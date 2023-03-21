@@ -20,7 +20,7 @@ import { FiDownload, FiGithub } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import GitStat from "../Components/GitStat/GitStat";
 // import { Link } from "react-router-dom";
-import Resume from "../Image/Suman_Biswas_Portfolio.pdf";
+import Resume from "../Image/Suman_Biswas_Resume.pdf";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { HashLink } from "react-router-hash-link";
 

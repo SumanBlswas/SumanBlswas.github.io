@@ -12,7 +12,7 @@ import { FiDownload } from "react-icons/fi";
 import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
-import Resume from "../Image/Suman_Biswas_Portfolio.pdf";
+import Resume from "../Image/Suman_Biswas_Resume.pdf";
 
 const Navbar = () => {
   const { toggleColorMode } = useColorMode();

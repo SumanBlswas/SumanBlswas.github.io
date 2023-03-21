@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 // import { Link } from "react-router-dom";
 import DummyMe from "../Image/DummyMe.png";
-import pdf from "../Image/Suman_Biswas_Portfolio.pdf";
+import PDF from "../Image/Suman_Biswas_Resume.pdf";
 
 const downloadResume = () => {
   window.open(
@@ -109,13 +109,13 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-      <Button onClick={downloadResume} id="resume-button-2">
+      <Button onClick={downloadResume()} id="resume-button-2">
         <a
-          id={"resume-link-2"}
-          href={pdf}
+          id="resume-link-2"
+          href={PDF}
           target="_blank"
           rel={"noreferrer"}
-          download={"Suman_Biswas_Resume.pdf"}
+          download="Suman_Biswas_Resume.pdf"
         >
           Resume
         </a>
