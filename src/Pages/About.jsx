@@ -124,6 +124,7 @@ const About = () => {
         </a>
       </Button> */}
       <Button
+        display={"none"}
         id="resume-button-2"
         as="a"
         href={Resume}
