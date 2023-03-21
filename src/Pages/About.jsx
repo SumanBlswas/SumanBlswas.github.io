@@ -128,7 +128,6 @@ const About = () => {
         as="a"
         href={Resume}
         target="_blank"
-        rel="noreferrer"
         download="Suman_Biswas_Resume.pdf"
         onClick={downloadResume}
       >
