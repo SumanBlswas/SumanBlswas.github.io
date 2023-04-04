@@ -12,14 +12,14 @@ import {
 // import { FiDownload } from "react-icons/fi";
 // import { Link } from "react-router-dom";
 import DummyMe from "../Image/DummyMe.png";
-import Resume from "../Image/Suman_Biswas_Resume.pdf";
+// import Resume from "../Image/Suman_Biswas_Resume.pdf";
 
-const downloadResume = () => {
-  window.open(
-    "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
-    "_blank"
-  );
-};
+// const downloadResume = () => {
+//   window.open(
+//     "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
+//     "_blank"
+//   );
+// };
 
 const About = () => {
   return (
@@ -123,17 +123,19 @@ const About = () => {
           Resume
         </a>
       </Button> */}
-      <Button
-        display={"none"}
-        id="resume-button-2"
-        as="a"
-        href={Resume}
-        target="_blank"
-        download="Suman_Biswas_Resume.pdf"
-        onClick={downloadResume}
+      <a
+        id="resume-link-2"
+        href="https://drive.google.com/u/0/uc?id=1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw&export=download"
+        onClick={() => {
+          window.open(
+            `https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing`
+          );
+        }}
       >
-        Resume
-      </Button>
+        <Button display={"none"} id="resume-button-2">
+          Resume
+        </Button>
+      </a>
     </Box>
   );
 };
