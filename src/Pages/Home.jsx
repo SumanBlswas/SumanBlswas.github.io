@@ -111,9 +111,7 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
-      <Box>
-        <GitStateHome />
-      </Box>
+      <GitStateHome />
       <Contact />
       <Divider />
       <Box
