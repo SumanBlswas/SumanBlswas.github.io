@@ -12,18 +12,18 @@ import { FiDownload } from "react-icons/fi";
 import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
-import Resume from "../Image/Suman_Biswas_Resume.pdf";
+// import Resume from "../Image/Suman_Biswas_Resume.pdf";
 
 const Navbar = () => {
   const { toggleColorMode } = useColorMode();
   // const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
   // const secondaryTextColor = useColorModeValue("gray.600", "gray.400");
-  const downloadResume = () => {
-    window.open(
-      "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
-      "_blank"
-    );
-  };
+  // const downloadResume = () => {
+  //   window.open(
+  //     "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
+  //     "_blank"
+  //   );
+  // };
 
   const displayNavLinks = useBreakpointValue({
     base: "none",
@@ -121,6 +121,23 @@ const Navbar = () => {
           </Text>
         </NavLink>
         <NavLink
+          className="nav-link activity"
+          to="#activity"
+          smooth={true}
+          display={displayNavLinks}
+        >
+          <Text
+            fontSize={"2xl"}
+            color={"white"}
+            transition={"color 0.3s ease"}
+            _hover={{ color: "grey" }}
+            animation={"bounce 2s ease-in-out infinite"}
+            display={displayNavLinks}
+          >
+            Activity
+          </Text>
+        </NavLink>
+        <NavLink
           className="nav-link contact"
           to="#contact"
           smooth={true}
@@ -144,7 +161,7 @@ const Navbar = () => {
           </Flex>
         </Button>
 
-        <Button
+        {/* <Button
           className="nav-link resume"
           id="resume-button-1"
           pt={2}
@@ -161,7 +178,30 @@ const Navbar = () => {
             <FiDownload />
             Resume
           </Flex>
-        </Button>
+        </Button> */}
+        <a
+          id="resume-link-1"
+          className="nav-link resume"
+          href="https://drive.google.com/u/0/uc?id=1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw&export=download"
+          onClick={() => {
+            window.open(
+              `https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing`
+            );
+          }}
+          display={displayNavLinks2}
+        >
+          <Button
+            bg={"#C471FF"}
+            color={"#fff"}
+            _hover={{ bg: "#FF9A9E", color: "#000" }}
+            id="resume-button-1"
+          >
+            <Flex justify={"space-between"} gap={2} align={"center"}>
+              <FiDownload />
+              Resume
+            </Flex>
+          </Button>
+        </a>
       </Flex>
     </Box>
   );

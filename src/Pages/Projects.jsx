@@ -3,22 +3,26 @@ import Bogo from "./Projects/Bogo";
 import EliteStore from "./Projects/EliteStore";
 import PyaraPizza from "./Projects/PyaraPizza";
 import TravelHut from "./Projects/TravelHut";
+import Koovs from "./Projects/Koovs";
+import LimeRoad from "./Projects/LimeRoad";
 
 const Projects = () => {
   return (
-    <Box id="projects" mt={"5%"} zIndex={"-1"}>
-      <Heading fontFamily={"'Sono', sans-serif"}>Projects</Heading>
-      <Center>
+    <Box id="projects" m="8%" mt={0} mb={"0"}>
+      <Heading fontFamily={"'Sono', sans-serif"} p="70px" pb="0">Projects</Heading>
+      <Center mt={3}>
         <Flex
-          justify={{ base: "center", md: "space-between" }}
+          justify={{ base: "center", md: "space-around" }}
           alignItems="center"
           flexWrap="wrap"
           gap={5}
         >
           <TravelHut />
-          <PyaraPizza />
-          <EliteStore />
           <Bogo />
+          <EliteStore />
+          <PyaraPizza />
+          <Koovs />
+          <LimeRoad />
         </Flex>
       </Center>
     </Box>

@@ -1,6 +1,6 @@
 import {
   Box,
-  Button,
+  // Button,
   Center,
   Flex,
   Heading,
@@ -23,8 +23,8 @@ import DummyMe from "../Image/DummyMe.png";
 
 const About = () => {
   return (
-    <Box id="about" className="about section" mt={"7%"}>
-      <Flex gap={4} justify={"center"} align={"center"}>
+    <Box id="about" className="about section" mt={"auto"}>
+      <Flex gap={4} justify={"center"} align={"center"} p="70px" pb="0">
         <Heading
           as={"h1"}
           fontFamily={"'Sono', sans-serif"}
@@ -123,7 +123,7 @@ const About = () => {
           Resume
         </a>
       </Button> */}
-      <a
+      {/* <a
         id="resume-link-2"
         href="https://drive.google.com/u/0/uc?id=1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw&export=download"
         onClick={() => {
@@ -135,7 +135,7 @@ const About = () => {
         <Button display={"none"} id="resume-button-2">
           Resume
         </Button>
-      </a>
+      </a> */}
     </Box>
   );
 };

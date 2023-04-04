@@ -18,23 +18,24 @@ import DummyPic from "../Image/DummyPic.png";
 import Footer from "../Components/Footer";
 import { FiDownload, FiGithub } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
-import GitStat from "../Components/GitStat/GitStat";
+// import GitStat from "../Components/GitStat/GitStat";
 // import { Link } from "react-router-dom";
-import Resume from "../Image/Suman_Biswas_Resume.pdf";
+// import Resume from "../Image/Suman_Biswas_Resume.pdf";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { HashLink } from "react-router-hash-link";
+import GitStateHome from "../Components/GitStat/GitStateHome";
 
 const Home = () => {
   const bgColor = useColorModeValue("#461783", "rgb(234, 246, 249)");
   const secondaryTextColor = useColorModeValue("#fff", "black");
-  const downloadResume = () => {
-    window.open(
-      "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
-      "_blank"
-    );
-  };
+  // const downloadResume = () => {
+  //   window.open(
+  //     "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
+  //     "_blank"
+  //   );
+  // };
 
-  const pt = useBreakpointValue({ base: "20%", md: "10%" });
+  const pt = useBreakpointValue({ base: "28%", md: "10%" });
 
   return (
     <Box bg={bgColor} color={secondaryTextColor} pt={pt}>
@@ -53,20 +54,27 @@ const Home = () => {
               <br />
               <br />
               <Flex gap={4} wrap={"wrap"}>
-                <Button
-                  bg={"#C471FF"}
-                  color={"#fff"}
-                  _hover={{ bg: "#FF9A9E", color: "#000" }}
-                  onClick={downloadResume}
-                  as={"a"}
-                  href={Resume}
-                  download
+                <a
+                  id="resume-link-2"
+                  href="https://drive.google.com/u/0/uc?id=1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw&export=download"
+                  onClick={() => {
+                    window.open(
+                      `https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing`
+                    );
+                  }}
                 >
-                  <Flex justify={"space-between"} gap={2} align={"center"}>
-                    <FiDownload />
-                    Resume
-                  </Flex>
-                </Button>
+                  <Button
+                    bg={"#C471FF"}
+                    color={"#fff"}
+                    _hover={{ bg: "#FF9A9E", color: "#000" }}
+                    id="resume-button-2"
+                  >
+                    <Flex justify={"space-between"} gap={2} align={"center"}>
+                      <FiDownload />
+                      Resume
+                    </Flex>
+                  </Button>
+                </a>
                 <NavLink to="/git-stat">
                   <Button
                     bg={"#C471FF"}
@@ -103,10 +111,10 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
-      <Contact />
-      <Box display={"none"}>
-        <GitStat />
+      <Box>
+        <GitStateHome />
       </Box>
+      <Contact />
       <Divider />
       <Box
         position={"fixed"}
