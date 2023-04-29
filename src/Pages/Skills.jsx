@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import "../Components/css/Skills.css";
 import { skills } from "../Redux/Skills.database";
 
@@ -9,11 +9,11 @@ const Skills = () => {
         Skills
       </Heading>
       <Center mt={8} fontFamily={"'Fredoka One', cursive"}>
-        {skills.map((el, id) => (
-          <Box className="skills-card" key={id}>
-            <Image className="skills-card-img" />
-            <Text className="skills-card-name">{el}</Text>
-          </Box>
+        {skills.img.map((el, i) => (
+          <Flex className="skills-card" key={i} justify={"center"} placeItems={"center"} >
+            <Image className="skills-card-img" src={el} />
+            <Text className="skills-card-name"></Text>
+          </Flex>
         ))}
       </Center>
     </Box>

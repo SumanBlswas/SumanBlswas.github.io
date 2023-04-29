@@ -38,11 +38,13 @@ const About = () => {
       </Flex>
       <Center mt={"4%"}>
         <Flex justify={"space-around"} align={"center"}>
-          <Flex w={"25%"} direction={"column"} gap="70px" align={"center"}>
+          <Flex w={"25%"} direction={"column"} gap="25px" align={"center"}>
             <Image w={"50%"} src={DummyMe} borderRadius={"2xl"} />
             <Image
               w={"80%"}
-              src={"https://chetan-bhagat.github.io/Images/hero-devices.svg"}
+              src={
+                "https://user-images.githubusercontent.com/112753516/230084473-4f75e015-a92f-4ee2-b441-dcb7efde21d0.svg"
+              }
             />
           </Flex>
           <Box>

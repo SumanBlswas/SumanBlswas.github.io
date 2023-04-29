@@ -134,7 +134,7 @@ const Navbar = () => {
             animation={"bounce 2s ease-in-out infinite"}
             display={displayNavLinks}
           >
-            Activity
+            GitStat
           </Text>
         </NavLink>
         <NavLink
