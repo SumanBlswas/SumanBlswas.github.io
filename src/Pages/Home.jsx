@@ -29,7 +29,7 @@ const Home = () => {
   const bgColor = useColorModeValue("#461783", "rgb(234, 246, 249)");
   const secondaryTextColor = useColorModeValue("#fff", "black");
 
-  const pt = useBreakpointValue({ base: "28%", md: "10%" });
+  const pt = useBreakpointValue({ base: "28%", md: "15%", lg: "10%" });
   const imageSrc = useBreakpointValue({
     base: DummyMe,
     md: DummyPic,
@@ -51,7 +51,7 @@ const Home = () => {
 
   const [projectsRef, projectsInView] = useInView({
     triggerOnce: false,
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   const [gitStateRef, gitStateInView] = useInView({

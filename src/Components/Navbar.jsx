@@ -14,6 +14,7 @@ import {
   DrawerCloseButton,
   DrawerHeader,
   DrawerBody,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FiDownload, FiMenu } from "react-icons/fi";
@@ -25,9 +26,18 @@ const Navbar = () => {
   const { toggleColorMode } = useColorMode();
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
 
-  const displayHashLinks = useBreakpointValue({ base: "none", md: "flex" });
+  const displayHashLinks = useBreakpointValue({
+    base: "none",
+    md: "none",
+    lg: "flex",
+  });
 
-  const displayHashLinks2 = useBreakpointValue({ base: "none", md: "block" });
+  const displayHashLinks2 = useBreakpointValue({
+    base: "none",
+    md: "block",
+  });
+
+  const secondaryTextColor = useColorModeValue("black", "white");
 
   const handleMobileNavToggle = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -48,7 +58,10 @@ const Navbar = () => {
         zIndex={2}
       >
         <Flex justify="space-between" wrap="wrap" align="center">
-          <Flex justify={"space-between"} w={{ base: "100%", md: "auto" }}>
+          <Flex
+            justify={"space-between"}
+            w={{ base: "100%", md: "100%", lg: "auto" }}
+          >
             <Link to="/">
               <Text
                 fontSize="3xl"
@@ -62,12 +75,16 @@ const Navbar = () => {
 
             <IconButton
               icon={
-                <Flex placeItems={"center"} justify={"center"}>
+                <Flex
+                  placeItems={"center"}
+                  justify={"center"}
+                  color={secondaryTextColor}
+                >
                   <FiMenu />
                 </Flex>
               }
               colorScheme="whiteAlpha"
-              display={{ base: "block", md: "none" }}
+              display={{ base: "block", md: "block", lg: "none" }}
               onClick={handleMobileNavToggle}
             />
           </Flex>
@@ -95,8 +112,8 @@ const Navbar = () => {
                 <DrawerBody>
                   <Flex
                     direction="column"
-                    align={{ base: "center", md: "initial" }}
-                    mb={{ base: 4, md: 0 }}
+                    align={{ base: "center", md: "center", lg: "initial" }}
+                    mb={{ base: 4, md: 4, lg: 0 }}
                   >
                     <a
                       className="nav-link home"
