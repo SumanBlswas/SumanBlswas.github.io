@@ -4,8 +4,16 @@ import GitHubCalendar from "react-github-calendar";
 
 const GitStateHome = () => {
   return (
-    <VStack id="activity" pb="100px" m="auto" mt={0} gap={"40px"}>
-      <Text p="60px" pb="0" fontWeight={"bold"} fontSize={"4xl"}>
+    <VStack
+      id="activity"
+      pb="50px"
+      m="auto"
+      mt={0}
+      gap={"40px"}
+      pl={{ base: 5, md: 0 }}
+      pr={{ base: 5, md: 0 }}
+    >
+      <Text p="65px" pb="0" fontWeight={"bold"} fontSize={"4xl"}>
         Activity
       </Text>
       <GitHubCalendar username="sumanblswas" class="react-activity-calendar" />

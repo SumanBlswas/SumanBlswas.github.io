@@ -66,9 +66,9 @@ const Contact = () => {
           p={{ sm: 5, md: 5, lg: 16 }}
         >
           <Box p={4}>
-            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }} justify={"center"} alignItems={"center"}>
               <WrapItem>
-                <Box>
+                <Box >
                   <Heading fontFamily={"'Sono', sans-serif"}>Contact</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
                     Fill up the form below to contact

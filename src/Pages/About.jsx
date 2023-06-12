@@ -9,22 +9,18 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-// import { FiDownload } from "react-icons/fi";
-// import { Link } from "react-router-dom";
 import DummyMe from "../Image/DummyMe.png";
-// import Resume from "../Image/Suman_Biswas_Resume.pdf";
-
-// const downloadResume = () => {
-//   window.open(
-//     "https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing",
-//     "_blank"
-//   );
-// };
 
 const About = () => {
   return (
     <Box id="about" className="about section" mt={"auto"}>
-      <Flex gap={4} justify={"center"} align={"center"} p="70px" pb="0">
+      <Flex
+        gap={4}
+        justify={"center"}
+        align={"center"}
+        p={{ base: "40px", md: "75px" }}
+        pb="0"
+      >
         <Heading
           as={"h1"}
           fontFamily={"'Sono', sans-serif"}
@@ -36,9 +32,15 @@ const About = () => {
           Me
         </Heading>
       </Flex>
-      <Center mt={"4%"}>
+      <Center mt={"0%"} m={{ base: 8, md: 0 }}>
         <Flex justify={"space-around"} align={"center"}>
-          <Flex w={"25%"} direction={"column"} gap="25px" align={"center"}>
+          <Flex
+            w={"25%"}
+            direction={"column"}
+            gap="25px"
+            align={"center"}
+            display={{ base: "none", md: "flex" }}
+          >
             <Image w={"50%"} src={DummyMe} borderRadius={"2xl"} />
             <Image
               w={"80%"}
@@ -113,31 +115,6 @@ const About = () => {
           </Box>
         </Flex>
       </Center>
-      {/* <Button id="resume-button-2">
-        <a
-          id="resume-link-2"
-          href={Resume}
-          target="_blank"
-          rel={"noreferrer"}
-          download="Suman_Biswas_Resume.pdf"
-          onClick={downloadResume}
-        >
-          Resume
-        </a>
-      </Button> */}
-      {/* <a
-        id="resume-link-2"
-        href="https://drive.google.com/u/0/uc?id=1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw&export=download"
-        onClick={() => {
-          window.open(
-            `https://drive.google.com/file/d/1tlNTe3gqnm_9NpEzocTr3CB_iE3dIbxw/view?usp=sharing`
-          );
-        }}
-      >
-        <Button display={"none"} id="resume-button-2">
-          Resume
-        </Button>
-      </a> */}
     </Box>
   );
 };

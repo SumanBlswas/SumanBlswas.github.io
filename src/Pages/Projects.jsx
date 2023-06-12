@@ -9,7 +9,7 @@ import LimeRoad from "./Projects/LimeRoad";
 const Projects = () => {
   return (
     <Box id="projects" m="8%" mt={0} mb={"0"}>
-      <Heading fontFamily={"'Sono', sans-serif"} p="70px" pb="0">Projects</Heading>
+      <Heading fontFamily={"'Sono', sans-serif"} p="75px" pb="0">Projects</Heading>
       <Center mt={3}>
         <Flex
           justify={{ base: "center", md: "space-around" }}
