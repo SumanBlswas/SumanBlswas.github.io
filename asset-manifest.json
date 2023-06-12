@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dc09539d.css",
-    "main.js": "/static/js/main.42df1fde.js",
+    "main.js": "/static/js/main.f0bcd172.js",
     "static/js/27.2163fce8.chunk.js": "/static/js/27.2163fce8.chunk.js",
     "static/media/EliteStore.png": "/static/media/EliteStore.a123ebf033df906e878e.png",
     "static/media/LimeRoad.png": "/static/media/LimeRoad.44bd74dbce319543d1d9.png",
@@ -13,6 +13,6 @@
   },
   "entrypoints": [
     "static/css/main.dc09539d.css",
-    "static/js/main.42df1fde.js"
+    "static/js/main.f0bcd172.js"
   ]
 }
